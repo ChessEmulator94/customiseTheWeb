@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #be1c1c;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,6 +24,7 @@ a:hover {
 }
 
 body {
+  color: rgba(255, 255, 255, 0.87);
   margin: 0;
   display: flex;
   place-items: center;
@@ -43,7 +44,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #e41010;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -53,6 +54,26 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* In your CSS file */
+.red-button {
+  background-color: red;
+  color: white; /* You can adjust text color as needed */
+}
+
+.blue-button {
+  background-color: blue;
+  color: white; /* You can adjust text color as needed */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
 }
 
 @media (prefers-color-scheme: light) {
