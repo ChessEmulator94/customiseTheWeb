@@ -12,6 +12,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --main-bg-color: rgb(255, 0, 0);
 }
 
 a {
@@ -24,6 +26,8 @@ a:hover {
 }
 
 body {
+  background-color: var(--main-bg-color);
+
   color: rgba(255, 255, 255, 0.87);
   margin: 0;
   display: flex;

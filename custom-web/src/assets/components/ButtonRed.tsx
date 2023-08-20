@@ -1,14 +1,25 @@
-import { useState } from "react";
+//import { useState } from "react";
 
-const onRedClick = () => console.log();
 function ButtonRed() {
+  // const [isClicked, setIsClicked] = useState(false);
+
+  const onRedClick = () => {
+    document.documentElement.style.setProperty("--main-bg-color", "darkred");
+  };
+
+  const onBlueClick = () => {
+    document.documentElement.style.setProperty("--main-bg-color", "darkblue");
+  };
+
   return (
-    <>
+    <div>
       <button className="red-button" onClick={onRedClick}>
         RED
       </button>
-      <button className="blue-button">BLUE</button>
-    </>
+      <button className="blue-button" onClick={onBlueClick}>
+        BLUE
+      </button>
+    </div>
   );
 }
 
